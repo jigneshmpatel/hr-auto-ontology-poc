@@ -1,0 +1,8 @@
+services:
+  auto-ontology:
+    volumes:
+      - "${HR_DATABASE_PATH}:/data/hr_database.db:ro"
+
+  ingestion-service:
+    volumes:
+      - "${HR_DATABASE_PATH}:/data/hr_database.db:ro"
